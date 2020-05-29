@@ -1,0 +1,5 @@
+#!name=Rubyfish DoH
+#!desc=Use dns over https from rubyfish.
+
+[General]
+doh-server = https://rubyfish.cn
