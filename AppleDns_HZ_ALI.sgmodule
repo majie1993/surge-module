@@ -1,6 +1,5 @@
 #!name=Apple DNS for Ali HZ
 #!desc=Optimize dns for apple service
-#!system=ios
 
 [Host]
 # Build Date: 2020-07-09T07:47:53.840787 (UTC)
