@@ -1,0 +1,11 @@
+#!name=VVebo时间线修复
+#!desc=修复失效的用户时间线
+#!system=ios
+
+[Script]
+http-request ^https:\/\/api\.weibo\.cn\/2\/users\/show\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/main/Resource/Script/VVebo/VVebo_repair.js
+http-request ^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/main/Resource/Script/VVebo/VVebo_repair.js
+http-response ^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\? requires-body=1,script-path = https://gitlab.com/lodepuly/vpn_tool/raw/main/Resource/Script/VVebo/VVebo_repair.js, requires-body = true, tag = 修复时间线
+
+[MITM]
+hostname = %APPEND% api.weibo.cn
